@@ -8,9 +8,16 @@ body {
     max-width: 960px;
 }
 
-.flex-between {
+.row {
     display: flex;
     justify-content: space-between;
+    column-gap: 28px;
+    row-gap: 28px;
+}
+
+.column {
+    min-width: 219px;
+    box-sizing: border-box;
 }
 
 .aic {
@@ -48,6 +55,11 @@ body {
 
 .contact-info {
     padding: 20px 0;
+}
+
+.phones,
+.messengers {
+    padding-left: 48px;
 }
 
 .phones p,
@@ -94,9 +106,35 @@ body {
 }
 
 .proposition {
+    text-align: center;
     background: #090606 url(../img/background.jpg) center/cover;
+    padding: 60px 0;
 }
 
-.proposition p {
+.prop-title {
+    margin: 0 0 20px 0;
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.prop-text {
+    margin: 0 0 20px 0;
+    margin-top: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.prop-cost {
     margin: 0;
+    margin-top: 0;
+    color: #fd8300;
+}
+
+.prop-cost span {
+    font-size: 40px;
+    font-weight: bold;
 }
