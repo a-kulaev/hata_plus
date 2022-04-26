@@ -6,6 +6,7 @@ body {
 .wrapper {
     margin: 0 auto;
     max-width: 960px;
+    box-sizing: border-box;
 }
 
 .row {
@@ -24,8 +25,24 @@ body {
     align-items: center;
 }
 
+h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #24242b;
+    font-family: "Roboto Slab";
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #24242b;
+    font-family: "Roboto Slab";
+}
+
 .header {
-    padding: 15.5px 0;
+    padding: 8px 0;
     background-color: #1f1f56;
 }
 
@@ -136,4 +153,85 @@ body {
 .prop-cost span {
     font-size: 40px;
     font-weight: bold;
+}
+
+.content {
+    margin: 0;
+    max-width: 713px;
+}
+
+.company {
+    margin: 0;
+    padding: 37px 0;
+}
+
+.company p {
+    margin: 14px 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.details {
+    font-size: 14px;
+    color: #fd8300;
+}
+
+.aside {
+    max-width: 219px;
+    padding: 37px 0;
+}
+
+.aside p {
+    margin: 0;
+}
+
+.aside ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.aside li {
+    padding: 14px 15px;
+    font-size: 14px;
+    list-style: none;
+    background-color: #e4e4ec;
+}
+
+.menu_top {
+    padding: 14px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    color: #fff;
+    border-radius: 3px 3px 0 0;
+    background-color: #1f1f56;
+}
+
+li.menu_category {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+li.menu_dropdown {
+    padding: 0 0 0 15px;
+}
+
+li.menu_hover {
+    margin: 0 0 0 -15px;
+    padding-left: 30px;
+    background-color: #cecedd;
+}
+
+.cards {
+    margin: 0;
+}
+
+figure.row {
+    margin: 0;
+}
+
+.cards {
+    margin: 0;
+    padding: 37px 0;
 }
