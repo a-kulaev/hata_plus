@@ -3,21 +3,29 @@ body {
     font-family: "Arial", sans-serif;
 }
 
+
 .wrapper {
     margin: 0 auto;
     max-width: 960px;
     box-sizing: border-box;
 }
 
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
 .row {
     display: flex;
     justify-content: space-between;
+    //flex-wrap: wrap;
     column-gap: 28px;
     row-gap: 28px;
 }
 
 .column {
     min-width: 219px;
+    //width: 219px;
     box-sizing: border-box;
 }
 
@@ -34,7 +42,7 @@ h1 {
 }
 
 h2 {
-    margin: 0;
+    margin: 0 0 24px 0;
     font-size: 24px;
     font-weight: 700;
     color: #24242b;
@@ -42,7 +50,7 @@ h2 {
 }
 
 h3 {
-    margin: 0;
+    margin: 8px 0 6px 0;
     font-size: 14px;
     color: #1f1f56;
 }
@@ -53,11 +61,38 @@ h3 {
 
 hr {
     margin: 0;
-    border-top: solid 0.5px #cdcddd;   
+    border: none; 
+}
+
+
+.hover_orange:hover {
+    color: #fd8300;
+}
+
+.hover_grey:hover {
+    background-color: #cecedd;   
+}
+
+.hover_blue:hover {
+    color: #1f1f56;
+}
+
+.hover_cta:hover {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.hover_aside_menu:hover {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+sup {
+    font-size: 0.6em;
 }
 
 .header {
-    padding: 8px 0;
+    padding: 15.5px 0;
     background-color: #1f1f56;
 }
 
@@ -81,10 +116,6 @@ hr {
     transition: all 0.5s ease;
 }
 
-.menu a:hover {
-    color: #fd8300;
-}
-
 .contact-info {
     padding: 20px 0;
 }
@@ -103,11 +134,13 @@ hr {
     font: bold 18px/24px Arial;
     color: #25252c;
     text-decoration: none;
+    transition: all 0.5s ease;
 }
 
 .messengers a {
     font-size: 16px;
     line-height: 24px;
+    transition: all 0.5s ease;
 }
 
 .mail {
@@ -117,6 +150,10 @@ hr {
 .skype {
     color: #25252c;
     text-decoration: none;
+}
+
+.cta {
+    text-align: right;
 }
 
 .cta a {
@@ -132,10 +169,6 @@ hr {
     transition: all 0.5s ease;
 }
 
-.cta a:hover {
-    color: #fff;
-    background-color: #fd8300;
-}
 
 .proposition {
     text-align: center;
@@ -163,7 +196,7 @@ hr {
 .prop-cost {
     margin: 0;
     color: #fd8300;
-}
+    }
 
 .prop-cost span {
     font-size: 40px;
@@ -177,7 +210,7 @@ hr {
 
 .company {
     margin: 0;
-    padding: 37px 0;
+    padding: 37px 0 35px 0;
 }
 
 .company p {
@@ -190,11 +223,9 @@ hr {
 .details {
     font-size: 14px;
     color: #fd8300;
+    transition: all 0.5s ease;
 }
 
-.details:hover {
-    color: #1f1f56;
-}
 
 .figcaption p {
     margin: 0;
@@ -226,7 +257,7 @@ hr {
     background-color: #e4e4ec;
 }
 
-.menu_top {
+.aside_top {
     padding: 14px 15px;
     font-size: 16px;
     font-weight: 700;
@@ -236,24 +267,19 @@ hr {
     background-color: #1f1f56;
 }
 
-li.menu_category {
-    color: #fff;
-    background-color: #fd8300;
+.aside_menu {
+    font-size: 14px;
+    color: #25252c;
+    text-decoration: none;
 }
 
-li.menu_dropdown {
+li.aside_dropdown {
+    padding: 0;
+}
+
+.aside_dropdown {
+    padding-left: 15px;
     color: #666666;
-    padding: 0 0 0 15px;
-}
-
-.menu_hover:hover {
-    margin: 0 0 0 -15px;
-    padding-left: 30px;
-    background-color: #cecedd;   
-}
-
-.cards {
-    margin: 0;
 }
 
 figure.row {
@@ -262,7 +288,7 @@ figure.row {
 
 .cards {
     margin: 0;
-    padding: 37px 0;
+    padding: 27px 0 45px 0;
 }
 
 .contacts {
@@ -271,4 +297,8 @@ figure.row {
 
 .copyright {
     background-color: #dcdce6;;
+}
+
+.figure {
+    margin: 0;
 }
