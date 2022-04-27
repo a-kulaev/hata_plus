@@ -41,6 +41,12 @@ h2 {
     font-family: "Roboto Slab";
 }
 
+h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #1f1f56;
+}
+
 .border {
     border-bottom: solid 1px #cdcddd;
 }
@@ -189,6 +195,15 @@ hr {
 .details:hover {
     color: #1f1f56;
 }
+
+.figcaption p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+}
+
+
 
 .aside {
     max-width: 219px;
