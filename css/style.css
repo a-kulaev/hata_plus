@@ -41,6 +41,10 @@ h2 {
     font-family: "Roboto Slab";
 }
 
+.border {
+    border-bottom: solid 1px #cdcddd;
+}
+
 .header {
     padding: 8px 0;
     background-color: #1f1f56;
@@ -177,6 +181,10 @@ h2 {
     color: #fd8300;
 }
 
+.details:hover {
+    color: #1f1f56;
+}
+
 .aside {
     max-width: 219px;
     padding: 37px 0;
@@ -214,13 +222,20 @@ li.menu_category {
 }
 
 li.menu_dropdown {
+    color: #666666;
     padding: 0 0 0 15px;
 }
 
-li.menu_hover {
+.menu_hover:hover {
     margin: 0 0 0 -15px;
     padding-left: 30px;
-    background-color: #cecedd;
+    background-color: #cecedd;   
+}
+
+li.menu_hover {
+    //margin: 0 0 0 -15px;
+    //padding-left: 30px;
+    //background-color: #cecedd;
 }
 
 .cards {
@@ -234,4 +249,12 @@ figure.row {
 .cards {
     margin: 0;
     padding: 37px 0;
+}
+
+.contacts {
+    background-color: #ededf5;
+}
+
+.copyright {
+    background-color: #dcdce6;;
 }
