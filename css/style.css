@@ -90,11 +90,6 @@ hr {
     background-color: #fd8300;
 }
 
-.hover_aside_menu:hover {
-    color: #fff;
-    background-color: #fd8300;
-}
-
 sup {
     font-size: 0.6em;
 }
@@ -239,6 +234,41 @@ p a.skype {
     transition: all 0.5s ease;
 }
 
+.sidebar {
+    margin: 37px 0;
+}
+
+.aside_menu p {
+    margin: 0;
+    padding: 10px 15px 9px;
+    border-radius: 3px 3px 0 0;
+    color: #fff;
+    font: 700 16px/1.5em "Roboto Slab";
+    background-color: #1f1f56;
+}
+
+.aside_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.aside_menu a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #25252c;
+    background-color: #e4e4ec;
+    border-top: 1px solid #cdcddd;
+}
+
+.sub-menu a {
+    padding-left: 30px;
+    color: #666;
+}
+
 
 .figcaption p {
     margin: 0;
@@ -247,53 +277,8 @@ p a.skype {
     color: #9999a6;
 }
 
-
-
-.aside {
-    max-width: 219px;
-    padding: 37px 0;
-}
-
-.aside p {
+.figure {
     margin: 0;
-}
-
-.aside ul {
-    margin: 0;
-    padding-left: 0;
-}
-
-.aside li {
-    padding: 14px 15px;
-    font-size: 14px;
-    list-style: none;
-    background-color: #e4e4ec;
-}
-
-.aside_top {
-    padding: 14px 15px;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: "Roboto Slab";
-    color: #fff;
-    border-radius: 3px 3px 0 0;
-    background-color: #1f1f56;
-}
-
-.aside_menu {
-    font-size: 14px;
-    color: #25252c;
-    text-decoration: none;
-}
-
-li.aside_dropdown {
-    padding: 0;
-}
-
-.aside_dropdown {
-    padding-left: 15px;
-    text-decoration: none;
-    color: #666666;
 }
 
 figure.row {
@@ -306,27 +291,8 @@ figure.row {
 }
 
 .contacts {
-    background-color: #ededf5;
-}
-
-.copyright {
-    background-color: #dcdce6;;
-}
-
-.figure {
-    margin: 0;
-}
-
-.copyright p {
-    margin: 0;
-    padding: 15px 0 16px 0;
-    text-align: center;
-    font-size: 13px;
-    color: #9999a6;
-}
-
-.contacts {
     padding: 33px 0 32px 0;
+    background-color: #ededf5;
 }
 
 .contacts ul {
@@ -346,7 +312,25 @@ figure.row {
     color: #666666;
 }
 
+.footer .mail {
+    text-decoration: underline;
+}
+
 .contacts a:hover {
     text-decoration: underline;
     color: #fd8300;
 }
+
+.copyright {
+    background-color: #dcdce6;;
+}
+
+.copyright p {
+    margin: 0;
+    padding: 15px 0 16px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #9999a6;
+}
+
+
