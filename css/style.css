@@ -52,7 +52,15 @@ h2 {
 h3 {
     margin: 8px 0 6px 0;
     font-size: 14px;
+}
+
+h3 a {
+    text-decoration: none;
     color: #1f1f56;
+}
+
+h3 a:hover {
+    text-decoration: underline;
 }
 
 .border {
@@ -130,11 +138,16 @@ sup {
     margin: 10px 0;;
 }
 
-.phones a {
+.phones a.tel {
     font: bold 18px/24px Arial;
     color: #25252c;
     text-decoration: none;
     transition: all 0.5s ease;
+}
+
+.phones a.tel:hover {
+    text-decoration: none;
+    color: #fd8300;
 }
 
 .messengers a {
@@ -143,11 +156,11 @@ sup {
     transition: all 0.5s ease;
 }
 
-.mail {
+p a.mail {
     color: #25252c; 
 }
 
-.skype {
+p a.skype {
     color: #25252c;
     text-decoration: none;
 }
@@ -279,6 +292,7 @@ li.aside_dropdown {
 
 .aside_dropdown {
     padding-left: 15px;
+    text-decoration: none;
     color: #666666;
 }
 
@@ -301,4 +315,38 @@ figure.row {
 
 .figure {
     margin: 0;
+}
+
+.copyright p {
+    margin: 0;
+    padding: 15px 0 16px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #9999a6;
+}
+
+.contacts {
+    padding: 33px 0 32px 0;
+}
+
+.contacts ul {
+    margin: 0;
+    padding: 0;
+}
+
+.contacts li {
+    list-style: none;
+    color: #666666;
+}
+
+.contacts a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666666;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+    color: #fd8300;
 }
