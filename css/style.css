@@ -238,6 +238,11 @@ p a.skype {
     margin: 37px 0;
 }
 
+.aside_menu {
+    position: sticky;
+    top: 37px;
+}
+
 .aside_menu p {
     margin: 0;
     padding: 10px 15px 9px;
@@ -263,6 +268,7 @@ p a.skype {
     background-color: #e4e4ec;
     border-top: 1px solid #cdcddd;
 }
+
 
 .sub-menu a {
     padding-left: 30px;
