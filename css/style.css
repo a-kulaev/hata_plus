@@ -52,6 +52,11 @@ h2 {
 h3 {
     margin: 8px 0 6px 0;
     font-size: 14px;
+    text-transform: uppercase;
+}
+
+h3 span {
+    text-transform: lowercase;
 }
 
 h3 a {
@@ -72,6 +77,9 @@ hr {
     border: none; 
 }
 
+a {
+    position: relative;
+}
 
 .hover_orange:hover {
     color: #fd8300;
@@ -116,48 +124,148 @@ sup {
     line-height: 24px;
     color: #b1b1d2;
     text-decoration: none;
-    transition: all 0.5s ease;
+    transition: all .5s ease;
+}
+
+.social a {
+    display: block;
+    background: url(../img/sprites.png) no-repeat;
+}
+
+a.fb {
+    width: 10px;
+    height: 19px;
+    background-position: 0 0;
+    transition: all .5s ease;
+}
+
+a.fb:hover {
+    background-position: 0 -21px;
+}
+
+a.tw {
+    width: 18px;
+    height: 15px;
+    background-position: -32px 0;
+    transition: all .5s ease;
+}
+
+a.tw:hover {
+    background-position: -32px -21px;
+}
+
+a.ig {
+    width: 19px;
+    height: 19px;
+    background-position: -12px 0;
+    transition: all .5s ease;
+}
+
+a.ig:hover {
+    background-position: -12px -21px;
 }
 
 .contact-info {
-    padding: 20px 0;
+    padding: 25.75px 0;
 }
 
-.phones,
-.messengers {
+.phones-top,
+.messengers-top {
     padding-left: 48px;
 }
 
-.phones p,
-.messengers p {
-    margin: 10px 0;;
+.messengers-bottom {
+    padding-left: 28px;
 }
 
-.phones a.tel {
+.phones-bottom {
+    padding-left: 27px;
+}
+
+div.phones-bottom p {
+    margin-top: 3px;
+}
+
+.phones-top p,
+.phones-bottom p,
+.messengers-top p,
+.messengers-bottom p {
+    margin: 5px 0;
+}
+
+.messengers-bottom p {
+    margin: 1px 0 2px;
+}
+
+.phones-top a.tel,
+.phones-bottom a.tel {
     font: bold 18px/24px Arial;
     color: #25252c;
     text-decoration: none;
-    transition: all 0.5s ease;
+    transition: all .5s ease;
 }
 
-.phones a.tel:hover {
+.phones-top a.tel:hover,
+.phones-bottom a.tel:hover {
     text-decoration: none;
     color: #fd8300;
 }
 
-.messengers a {
+.tel-icon:before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 2px;
+    width: 16px;
+    height: 17px;
+    background: url(../img/sprites.png) no-repeat -52px -21px;
+}
+
+.tel-icon:after {
+    content: "";
+    position: absolute;
+    left: 190px;
+    top: 0;
+    width: 1px;
+    height: 51px;
+    background-color: #e3e3eb;
+} 
+
+.messengers-top a,
+.messengers-bottom a {
     font-size: 16px;
     line-height: 24px;
-    transition: all 0.5s ease;
+    transition: all .5s ease;
 }
 
 p a.mail {
-    color: #25252c; 
+    color: #25252c;
+    text-decoration: underline;
+}
+
+.mail-icon:before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 2px;
+    width: 17px;
+    height: 13px;
+    background: url(../img/sprites.png) no-repeat -70px -21px;
 }
 
 p a.skype {
     color: #25252c;
     text-decoration: none;
+}
+
+.skype-icon:before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: -1px;
+    width: 19px;
+    height: 18px;
+    background: url(../img/sprites.png) no-repeat -89px -21px;
 }
 
 .cta {
@@ -174,7 +282,7 @@ p a.skype {
     text-decoration: none;
     border: 2px solid #fd8300;
     border-radius: 25px;
-    transition: all 0.5s ease;
+    transition: all .5s ease;
 }
 
 
@@ -204,11 +312,12 @@ p a.skype {
 .prop-cost {
     margin: 0;
     color: #fd8300;
+    font-size: 24px;
+    font-weight: bold;
     }
 
 .prop-cost span {
     font-size: 40px;
-    font-weight: bold;
 }
 
 .content {
@@ -231,7 +340,7 @@ p a.skype {
 .details {
     font-size: 14px;
     color: #fd8300;
-    transition: all 0.5s ease;
+    transition: all .5s ease;
 }
 
 .sidebar {
@@ -316,10 +425,7 @@ figure.row {
     font-size: 14px;
     line-height: 26px;
     color: #666666;
-}
-
-.footer .mail {
-    text-decoration: underline;
+    transition: all .5s ease;;
 }
 
 .contacts a:hover {
