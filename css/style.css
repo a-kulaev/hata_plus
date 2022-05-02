@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     margin: 0;
     font-family: "Arial", sans-serif;
@@ -18,14 +30,12 @@ body {
 .row {
     display: flex;
     justify-content: space-between;
-    //flex-wrap: wrap;
     column-gap: 28px;
     row-gap: 28px;
 }
 
 .column {
     min-width: 219px;
-    //width: 219px;
     box-sizing: border-box;
 }
 
@@ -68,13 +78,10 @@ h3 a:hover {
     text-decoration: underline;
 }
 
-.border {
-    border-bottom: solid 1px #cdcddd;
-}
-
 hr {
     margin: 0;
-    border: none; 
+    border: none;
+    border-bottom: solid 1px #cdcddd;
 }
 
 a {
@@ -354,7 +361,7 @@ p a.skype {
 
 .aside_menu p {
     margin: 0;
-    padding: 10px 15px 9px;
+    padding: 11px 15px 10px;
     border-radius: 3px 3px 0 0;
     color: #fff;
     font: 700 16px/1.5em "Roboto Slab";
@@ -365,6 +372,12 @@ p a.skype {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.aside_menu > ul > li > a:hover {
+    color: #fff;
+    border-color: #fd8300;
+    background-color: #fd8300;
 }
 
 .aside_menu a {
@@ -378,10 +391,23 @@ p a.skype {
     border-top: 1px solid #cdcddd;
 }
 
+.aside_menu > ul > li > a:before {
+    content: "";
+    position: absolute;
+    left: 197px;
+    top: 16px;
+    width: 8px;
+    height: 12px;
+    background: url(../img/sprites.png) no-repeat -109px -20px;
+}
 
 .sub-menu a {
     padding-left: 30px;
     color: #666;
+}
+
+.sub-menu > li > a:hover {
+    background-color: #cecedd;
 }
 
 
