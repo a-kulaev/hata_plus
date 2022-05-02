@@ -180,6 +180,12 @@ a.ig:hover {
     padding: 25.75px 0;
 }
 
+.details {
+    font-size: 14px;
+    color: #fd8300;
+    transition: all .5s ease;
+}
+
 .phones-top,
 .messengers-top {
     padding-left: 48px;
@@ -350,6 +356,11 @@ td {
     margin: 0;
     padding: 12px 20px 11px 20px;
     border-top: 1px solid #cdcddd;
+}
+
+.info {
+    font-size: 13px;
+    color: #9999a6;
 }
 
 .figcaption p {
