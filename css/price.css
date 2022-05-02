@@ -45,7 +45,7 @@ body {
 
 h1 {
     margin: 0;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     color: #24242b;
     font-family: "Roboto Slab";
@@ -107,6 +107,10 @@ a {
 
 sup {
     font-size: 0.6em;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .header {
@@ -296,124 +300,57 @@ p a.skype {
     transition: all .5s ease;
 }
 
-
-.proposition {
-    text-align: center;
-    background: #090606 url(../img/background.jpg) center/cover;
-    padding: 60px 0;
-}
-
-.prop-title {
-    margin: 0 0 8px 0;
-    font-size: 30px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    font-family: "Roboto Slab";
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.prop-text {
-    margin: 0 0 10px 0;
-    margin-top: 0;
-    font-size: 14px;
-    color: #fff;
-}
-
-.prop-cost {
-    margin: 0;
-    color: #fd8300;
-    font-size: 24px;
-    font-weight: bold;
-    }
-
-.prop-cost span {
-    font-size: 40px;
-}
-
 .content {
     margin: 0;
-    max-width: 713px;
 }
 
-.company {
+.price {
     margin: 0;
-    padding: 37px 0 35px 0;
+    padding: 33px 0 35px 0;
 }
 
-.company p {
+.price p {
     margin: 14px 0;
     font-size: 14px;
     line-height: 24px;
     color: #666666;
 }
 
-.details {
+table {
+    border-collapse:collapse;
+    width: 100%;
+}
+
+thead {
     font-size: 14px;
-    color: #fd8300;
-    transition: all .5s ease;
-}
-
-.sidebar {
-    margin: 37px 0;
-}
-
-.aside_menu {
-    position: sticky;
-    top: 37px;
-}
-
-.aside_menu p {
-    margin: 0;
-    padding: 11px 15px 10px;
-    border-radius: 3px 3px 0 0;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: left;
     color: #fff;
-    font: 700 16px/1.5em "Roboto Slab";
     background-color: #1f1f56;
 }
 
-.aside_menu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+tbody {
+    font-size: 14px;
+    color: #666666;
+    background-color: #e4e4ec;
 }
 
-.aside_menu > ul > li > a:hover {
+tbody tr:hover {
     color: #fff;
-    border-color: #fd8300;
     background-color: #fd8300;
 }
 
-.aside_menu a {
-    display: block;
-    padding: 10px 15px;
-    font-size: 14px;
-    line-height: 24px;
-    text-decoration: none;
-    color: #25252c;
-    background-color: #e4e4ec;
+th {
+    margin: 0;
+    padding: 14.5px 20px 11.5px 20px;
+}
+
+td {
+    margin: 0;
+    padding: 12px 20px 11px 20px;
     border-top: 1px solid #cdcddd;
 }
-
-.aside_menu > ul > li > a:before {
-    content: "";
-    position: absolute;
-    left: 197px;
-    top: 16px;
-    width: 8px;
-    height: 12px;
-    background: url(../img/sprites.png) no-repeat -109px -20px;
-}
-
-.sub-menu a {
-    padding-left: 30px;
-    color: #666;
-}
-
-.sub-menu > li > a:hover {
-    background-color: #cecedd;
-}
-
 
 .figcaption p {
     margin: 0;
