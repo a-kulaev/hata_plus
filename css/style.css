@@ -106,6 +106,7 @@ sup {
 }
 
 .header {
+    position: relative;
     padding: 15.5px 0;
     background-color: #1f1f56;
 }
