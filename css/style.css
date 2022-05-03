@@ -63,19 +63,11 @@ h3 {
     margin: 8px 0 6px 0;
     font-size: 14px;
     text-transform: uppercase;
+    color: #1f1f56;
 }
 
 h3 span {
     text-transform: lowercase;
-}
-
-h3 a {
-    text-decoration: none;
-    color: #1f1f56;
-}
-
-h3 a:hover {
-    text-decoration: underline;
 }
 
 hr {
@@ -400,6 +392,10 @@ tbody {
     background-color: #e4e4ec;
 }
 
+tbody tr + tr {
+    border-top: 1px solid #cdcddd;
+}
+
 tbody tr:hover {
     color: #fff;
     background-color: #fd8300;
@@ -413,7 +409,6 @@ th {
 td {
     margin: 0;
     padding: 12px 20px 11px 20px;
-    border-top: 1px solid #cdcddd;
 }
 
 .info {
@@ -429,35 +424,59 @@ td {
 
 .sidebar {
     margin: 37px 0;
+    min-width: 219px;
 }
 
-.aside_menu {
+.aside-menu {
     position: sticky;
     top: 37px;
+    border-radius: 3px;
+    overflow: hidden;
 }
 
-.aside_menu p {
+.aside-menu p {
     margin: 0;
     padding: 11px 15px 10px;
-    border-radius: 3px 3px 0 0;
     color: #fff;
     font: 700 16px/1.5em "Roboto Slab";
     background-color: #1f1f56;
 }
 
-.aside_menu ul {
+.aside-menu ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.aside_menu > ul > li > a:hover {
+.aside-menu > ul > li + li > a {
+    border-top: 1px solid #cdcddd;
+}
+
+.aside-menu > ul > li:hover > a {
     color: #fff;
-    border-color: #fd8300;
     background-color: #fd8300;
 }
 
-.aside_menu a {
+.aside-menu > ul > li > a:before {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+}
+
+.aside-menu > ul > li:hover > a:before {
+    top: 15px;
+    transform: rotate(45deg);
+    border-color: #fff;
+}
+
+.aside-menu a {
     display: block;
     padding: 10px 15px;
     font-size: 14px;
@@ -465,17 +484,14 @@ td {
     text-decoration: none;
     color: #25252c;
     background-color: #e4e4ec;
-    border-top: 1px solid #cdcddd;
 }
 
-.aside_menu > ul > li > a:before {
-    content: "";
-    position: absolute;
-    left: 197px;
-    top: 16px;
-    width: 8px;
-    height: 12px;
-    background: url(../img/sprites.png) no-repeat -109px -20px;
+.aside-menu li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    display: none;
 }
 
 .sub-menu a {
@@ -483,10 +499,9 @@ td {
     color: #666;
 }
 
-.sub-menu > li > a:hover {
+.sub-menu a:hover {
     background-color: #cecedd;
 }
-
 
 .figcaption p {
     margin: 0;
@@ -495,12 +510,25 @@ td {
     color: #9999a6;
 }
 
-.figure {
+.home {
+    position: relative;
     margin: 0;
 }
 
-figure.row {
+.home.row {
     margin: 0;
+}
+
+.home a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home a:hover ~ h3 {
+    text-decoration: underline;
 }
 
 .cards {
