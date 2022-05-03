@@ -109,6 +109,10 @@ sup {
     font-size: 0.6em;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .header {
     padding: 15.5px 0;
     background-color: #1f1f56;
@@ -176,11 +180,23 @@ a.ig:hover {
     padding: 25.75px 0;
 }
 
+.details {
+    font-size: 14px;
+    color: #fd8300;
+    transition: all .5s ease;
+}
+
+.phones-top,
+.messengers-top {
+    padding-left: 48px;
+}
+
 .phones-top,
 .messengers-top {
     padding-left: 48px;
 
 }
+
 .phones-top {
 position: relative;
 }
@@ -336,6 +352,10 @@ p a.skype {
     max-width: 713px;
 }
 
+.content-price {
+    margin: 0;
+}
+
 .company {
     margin: 0;
     padding: 37px 0 35px 0;
@@ -346,6 +366,59 @@ p a.skype {
     font-size: 14px;
     line-height: 24px;
     color: #666666;
+}
+
+.price {
+    margin: 0;
+    padding: 33px 0 35px 0;
+}
+
+.price p {
+    margin: 14px 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+}
+
+table {
+    border-collapse:collapse;
+    width: 100%;
+}
+
+thead {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: left;
+    color: #fff;
+    background-color: #1f1f56;
+}
+
+tbody {
+    font-size: 14px;
+    color: #666666;
+    background-color: #e4e4ec;
+}
+
+tbody tr:hover {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+th {
+    margin: 0;
+    padding: 14.5px 20px 11.5px 20px;
+}
+
+td {
+    margin: 0;
+    padding: 12px 20px 11px 20px;
+    border-top: 1px solid #cdcddd;
+}
+
+.info {
+    font-size: 13px;
+    color: #9999a6;
 }
 
 .details {
