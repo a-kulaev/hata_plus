@@ -70,6 +70,10 @@ h3 span {
     text-transform: lowercase;
 }
 
+.box-shadow {
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
 hr {
     margin: 0;
     border: none;
@@ -191,7 +195,7 @@ a.ig:hover {
 }
 
 .phones-top {
-position: relative;
+    position: relative;
 }
 
 .messengers-bottom {
