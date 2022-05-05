@@ -10,6 +10,8 @@
     font-display: swap;
 }
 
+/* Global */
+
 body {
     margin: 0;
     font-family: "Arial", sans-serif;
@@ -51,6 +53,10 @@ h1 {
     font-family: "Roboto Slab";
 }
 
+.all-contacts h1 {
+    font-size: 24px;
+}
+
 h2 {
     margin: 0 0 24px 0;
     font-size: 24px;
@@ -60,14 +66,17 @@ h2 {
 }
 
 h3 {
-    margin: 8px 0 6px 0;
     font-size: 14px;
-    text-transform: uppercase;
-    color: #1f1f56;
 }
 
 h3 span {
     text-transform: lowercase;
+}
+
+.all-contacts h3 {
+    margin: 16px 0 14px;
+    font-weight: 700;
+    font-family: "Roboto Slab";
 }
 
 .box-shadow {
@@ -108,6 +117,8 @@ sup {
 .text-right {
     text-align: right;
 }
+
+/* Header */
 
 .header {
     position: relative;
@@ -188,18 +199,23 @@ a.ig:hover {
     padding-left: 48px;
 }
 
-.phones-top,
-.messengers-top {
-    padding-left: 48px;
-
-}
-
-.phones-top {
-    position: relative;
+.messengers-top a,
+.messengers-bottom a {
+    font-size: 16px;
+    line-height: 24px;
+    transition: all .5s ease;
 }
 
 .messengers-bottom {
     padding-left: 28px;
+}
+
+.messengers-bottom p {
+    margin: 1px 0 2px;
+}
+
+.phones-top {
+    position: relative;
 }
 
 .phones-bottom {
@@ -212,13 +228,8 @@ div.phones-bottom p {
 
 .phones-top p,
 .phones-bottom p,
-.messengers-top p,
-.messengers-bottom p {
+.messengers-top p {
     margin: 5px 0;
-}
-
-.messengers-bottom p {
-    margin: 1px 0 2px;
 }
 
 .phones-top a.tel,
@@ -231,8 +242,8 @@ div.phones-bottom p {
 
 .phones-top a.tel:hover,
 .phones-bottom a.tel:hover {
-    text-decoration: none;
     color: #fd8300;
+    text-decoration: none;
 }
 
 .tel-icon:before {
@@ -255,12 +266,6 @@ div.phones-top:after {
     background-color: #e3e3eb;
 } 
 
-.messengers-top a,
-.messengers-bottom a {
-    font-size: 16px;
-    line-height: 24px;
-    transition: all .5s ease;
-}
 
 p a.mail {
     color: #25252c;
@@ -510,6 +515,12 @@ td {
     background-color: #cecedd;
 }
 
+figcaption h3 {
+    margin: 8px 0 6px 0;
+    text-transform: uppercase;
+    color: #1f1f56;
+}
+
 .figcaption p {
     margin: 0;
     font-size: 13px;
@@ -542,6 +553,61 @@ td {
     margin: 0;
     padding: 27px 0 45px 0;
 }
+
+.all-contacts {
+    padding: 35px 0 28px;
+}
+
+.all-contacts p {
+    margin: 7px 0 6px 0;
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+}
+
+.all-contacts a.tel {
+    display: block;
+}
+
+.all-contacts a.mail {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #25252c;
+}
+
+.all-contacts div > div {   
+    padding-left: 0;
+}
+
+.contacts-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-columns a.tel {
+    margin: 0 0 5.5px;
+    color: #25252c;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 0 45px;
+}
+
+.map {
+    width: 466px;
+    height: 295px;
+    background: #3a2660 url(../img/map.jpg) center/cover;
+}
+
+/* Footer */
 
 .contacts {
     padding: 33px 0 32px 0;
