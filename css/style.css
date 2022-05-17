@@ -595,7 +595,7 @@ figcaption h3 {
     line-height: 24px;
 }
 
-.form {
+.map-form {
     display: flex;
     justify-content: space-between;
     padding: 36px 0 45px;
@@ -605,6 +605,35 @@ figcaption h3 {
     width: 466px;
     height: 295px;
     background: #3a2660 url(../img/map.jpg) center/cover;
+}
+
+.callback {
+    min-width: 466px;
+}
+
+.callback h3 {
+    margin: -3px 0 14px 0;
+}
+
+.callback textarea {
+    min-width: 466px;
+    max-width: 466px;
+    min-height: 40px;
+    max-height: 105px;
+    box-sizing: border-box;
+}
+
+.fsname {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit {
+    display: flex;
+}
+
+.submit p {
+    margin: 0;
 }
 
 /* Footer */
