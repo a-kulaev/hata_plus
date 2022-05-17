@@ -607,12 +607,17 @@ figcaption h3 {
     background: #3a2660 url(../img/map.jpg) center/cover;
 }
 
-.callback {
-    min-width: 466px;
+.callback h3 {
+    margin: -3px 0 19px 0;
 }
 
-.callback h3 {
-    margin: -3px 0 14px 0;
+.callback input {
+    box-sizing: border-box;
+    margin: 5px 0 5px 0;
+}
+
+.callback textarea {
+    margin: 5px 0 5px 0;
 }
 
 .callback textarea {
@@ -628,12 +633,20 @@ figcaption h3 {
     justify-content: space-between;
 }
 
+.fsname input {
+    max-width: 228px;
+}
+
 .submit {
     display: flex;
 }
 
 .submit p {
     margin: 0;
+}
+
+.full-width {
+    width: 100%;
 }
 
 /* Footer */
