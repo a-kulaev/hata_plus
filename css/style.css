@@ -611,13 +611,13 @@ figcaption h3 {
     margin: -3px 0 19px 0;
 }
 
-.callback input {
+.callback input,
+.callback textarea {
     box-sizing: border-box;
     margin: 5px 0 5px 0;
-}
-
-.callback textarea {
-    margin: 5px 0 5px 0;
+    border: none;
+    border: solid 1px #c4c4d3;
+    border-radius: 3px;
 }
 
 .callback textarea {
@@ -625,7 +625,6 @@ figcaption h3 {
     max-width: 466px;
     min-height: 40px;
     max-height: 105px;
-    box-sizing: border-box;
 }
 
 .fsname {
@@ -639,6 +638,17 @@ figcaption h3 {
 
 .submit {
     display: flex;
+}
+
+.form-send {
+    padding: 13px 30px 12px 30px;
+    border-radius: 21px;
+    background-color: #fd8300;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 4px 30px 0 0;
 }
 
 .submit p {
