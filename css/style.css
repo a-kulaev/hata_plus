@@ -619,13 +619,14 @@ figcaption h3 {
 }
 
 .callback h3 {
-    margin: -3px 0 19px 0;
+    margin: -3px 0 17px 0;
 }
 
 .callback input,
 .callback textarea {
     box-sizing: border-box;
     margin: 5px 0 5px 0;
+    padding: 12px 15px 11px 15px;
     border: none;
     border: solid 1px #c4c4d3;
     border-radius: 3px;
@@ -634,7 +635,7 @@ figcaption h3 {
 .callback textarea {
     min-width: 466px;
     max-width: 466px;
-    min-height: 40px;
+    min-height: 105px;
     max-height: 105px;
 }
 
@@ -651,7 +652,7 @@ figcaption h3 {
     display: flex;
 }
 
-.form-send {
+input.form-send {
     padding: 13px 30px 12px 30px;
     border-radius: 21px;
     background-color: #fd8300;
@@ -664,6 +665,14 @@ figcaption h3 {
 
 .submit p {
     margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.submit span {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #666666;
 }
 
 .full-width {
