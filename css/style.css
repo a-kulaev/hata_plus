@@ -575,6 +575,7 @@ figcaption h3 {
     line-height: 24px;
     text-decoration: underline;
     color: #25252c;
+    transition: all .5s ease;
 }
 
 .all-contacts div > div {   
@@ -593,6 +594,15 @@ figcaption h3 {
     font-weight: bold;
     text-decoration: none;
     line-height: 24px;
+    transition: all .5s ease;
+}
+
+.contacts-columns a.tel:hover {
+    color: #fd8300;
+}
+
+.all-contacts a.mail:hover {
+    color: #fd8300;
 }
 
 .map-form {
@@ -601,9 +611,10 @@ figcaption h3 {
     padding: 36px 0 45px;
 }
 
-.map {
+.map iframe {
     width: 466px;
     height: 295px;
+    border: none;
     background: #3a2660 url(../img/map.jpg) center/cover;
 }
 
@@ -681,7 +692,7 @@ figcaption h3 {
     font-size: 14px;
     line-height: 26px;
     color: #666666;
-    transition: all .5s ease;;
+    transition: all .5s ease;
 }
 
 .contacts a:hover {
