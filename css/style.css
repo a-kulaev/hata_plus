@@ -73,10 +73,14 @@ h3 span {
     text-transform: lowercase;
 }
 
-.all-contacts h3 {
-    margin: 16px 0 14px;
+.all-contacts h3,
+.callback h3 {
     font-weight: 700;
     font-family: "Roboto Slab";
+}
+
+.all-contacts h3 {
+    margin: 16px 0 14px;
 }
 
 .box-shadow {
@@ -630,13 +634,21 @@ figcaption h3 {
     border: none;
     border: solid 1px #c4c4d3;
     border-radius: 3px;
+    color: #24242b;
+    outline-color: #fd8300;
+}
+
+.placeholder-text {
+    font-size: 13px;
+    color: #9999a6;
+    font-style: italic;
+    font-family: "Arial";
 }
 
 .callback textarea {
-    min-width: 466px;
-    max-width: 466px;
-    min-height: 105px;
-    max-height: 105px;
+    width: 466px;
+    height: 105px;
+    resize: none;
 }
 
 .fsname {
@@ -663,20 +675,57 @@ input.form-send {
     margin: 4px 30px 0 0;
 }
 
-.submit p {
-    margin: 0;
+.full-width {
+    width: 100%;
+}
+
+.checkbox {
     display: flex;
     align-items: center;
 }
 
-.submit span {
-    margin-left: 10px;
-    font-size: 13px;
-    color: #666666;
+.check {
+    display: none;
 }
 
-.full-width {
-    width: 100%;
+.check + label {
+    position: relative;
+    padding: 7px 25px 0;
+}
+
+.check:checked + label {
+    color: #24242b;
+}
+
+.check + label::before,
+.check:checked + label::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.check + label::before {
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: 6px;
+    border: 1px solid #c5c5d4;
+    border-radius: 3px;
+}
+
+.check:checked + label::after {
+    width: 8px;
+    height: 5px;
+    left: 4px;
+    top: 10px;
+    border-left: 2px solid #1f1f56;
+    border-bottom: 2px solid #1f1f56;
+    transform: rotate(-45deg);
+}
+
+.submit label {
+    font-size: 13px;
+    color: #666666;
 }
 
 /* Footer */

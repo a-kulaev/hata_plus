@@ -102,16 +102,19 @@
                     <form class="callback" action="index.html" method="post" width="466px">
                         <h3>Форма зворотнього зв’язку</h3>
                         <div class="fsname">
-                            <input type="text" class="full-width" placeholder="Ваше ім’я">
-                            <input type="text" class="full-width" placeholder="Телефон">
+                            <input type="text" class="full-width placeholder-text" placeholder="Ваше ім’я">
+                            <input type="text" class="full-width placeholder-text" placeholder="Телефон">
                         </div>
-                        <input type="text" class="full-width" placeholder="Тема повідомлення">
+                        <input type="text" class="full-width placeholder-text" placeholder="Тема повідомлення">
                         <div>
-                            <textarea placeholder="Текст"></textarea>
+                            <textarea class="placeholder-text" placeholder="Текст"></textarea>
                         </div>
                         <div class="submit">
                             <input type="submit" value="Відправити" class="form-send">
-                            <p><label><input class="checkbox" type="checkbox"><span>Я бажаю отримувати останні новини</span></label></p>
+                            <div class="checkbox">
+                                <input class="check" type="checkbox" id="callback-checkbox">
+                                <label for="callback-checkbox">Я бажаю отримувати останні новини</label>
+                            </div>
                         </div>
                     </form>
                 </section>
