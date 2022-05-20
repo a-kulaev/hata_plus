@@ -665,14 +665,21 @@ figcaption h3 {
 }
 
 input.form-send {
+    margin: 4px 30px 0 0;
     padding: 13px 30px 12px 30px;
     border-radius: 21px;
-    background-color: #fd8300;
     border: none;
-    color: #fff;
     font-size: 14px;
     font-weight: bold;
-    margin: 4px 30px 0 0;
+    color: #25252c;
+    border: solid 2px #fd8300;
+    background-color: transparent;
+    transition: all .5s ease;
+}
+
+input.form-send:hover {
+    color: #fff;
+    background-color: #fd8300;
 }
 
 .full-width {
